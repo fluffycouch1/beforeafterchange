@@ -52,19 +52,15 @@
   <img id="imgA" alt="">   <!-- top layer (the "a" image, controlled by slider) -->
 </div>
 
-<div id="err" style="position:fixed;top:12px;left:12px;right:12px;padding:10px 14px;background:#7a1f1f;color:#fff;font:14px system-ui;border-radius:6px;display:none;z-index:5"></div>
+<div id="err" style="position:fixed;top:12px;left:12px;right:12px;padding:10px 14px;background:#7a1f1f;color:#fff;font:20px system-ui;border-radius:6px;display:none;z-index:5"></div>
 
 <div id="bar">
-  <span>Top image opacity</span>
+  <span>Lower to age</span>
   <input type="range" id="opacity" min="0" max="100" value="100">
   <span id="value">100%</span>
 </div>
 
 <script>
-  // ====== EDIT THIS LIST ======
-  // Each pair: a = top image (the one the slider fades), b = bottom image.
-  // Put the image files in the same folder as this HTML file,
-  // or use full paths / URLs.
   const pairs = [
     { a: "image1a.png", b: "image1b.png" },
     { a: "image2a.png", b: "image2b.png" },
